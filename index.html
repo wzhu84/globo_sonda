@@ -28,6 +28,9 @@
                     look-controls 
                     wasd-controls="acceleration: 200">
                 </a-entity>
+
+                <!-- Luz que sigue el movimiento del usuario -->
+                <a-light type="point" position="0 2 0" intensity="2" color="#FFFFFF"></a-light>
             </a-entity>
             
             <!-- Permitir movimiento con orientación del dispositivo -->
@@ -63,11 +66,8 @@
             </script>
         </a-entity>
 
-        <!-- Iluminación mejorada -->
+        <!-- Iluminación ambiente -->
         <a-light type="ambient" color="#FFFFFF" intensity="1"></a-light>
-        <a-light type="point" position="10 10 10" intensity="2" color="#FFFFFF"></a-light>
-        <a-light type="point" position="-10 10 10" intensity="2" color="#FFFFFF"></a-light>
-        <a-light type="point" position="0 5 0" intensity="1.5" color="#FFFFFF"></a-light>
     </a-scene>
 </body>
 </html>
