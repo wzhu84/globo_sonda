@@ -12,6 +12,7 @@
         <!-- Carga de modelos -->
         <a-assets>
             <a-asset-item id="museo2-glb" src="museo2.glb"></a-asset-item>
+            <a-asset-item id="Adrián_Santiago-glb" src="Adrián_Santiago.glb"></a-asset-item>
         </a-assets>
 
         <!-- Modelo 3D del museo con todos los elementos en su interior -->
@@ -19,6 +20,11 @@
             gltf-model="#museo2-glb" 
             scale="10 10 10" 
             position="0 0 0" 
+            static-body>
+            <a-entity
+            gltf-model="#Adrián_Santiago-glb"
+            scale="1 1 1"
+            position=" 50 50 0"
             static-body>
             
             <!-- Cámara con controles móviles -->
