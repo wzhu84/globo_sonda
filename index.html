@@ -14,9 +14,8 @@
             <a-asset-item id="museo2-glb" src="museo2.glb"></a-asset-item>
             <a-asset-item id="Adrián_Santiago-glb" src="Adrián_Santiago.glb"></a-asset-item>
             <a-asset-item id="Victor_Ryan-glb" src="Victor_Ryan.glb"></a-asset-item>
+            <a-video id="video_apagon-mp4" src="video_apagon.mp4" autoplay loop muted></a-video>
         </a-assets>
-        <a-video src="video_apagon-mp4" width="4" height="2" position="-120 75 -315"></a-video>
-        <a-video src="video_apagon-mp4" autoplay loop muted></a-video>
 
         <!-- Modelo 3D del museo con todos los elementos en su interior -->
         <a-entity 
@@ -37,6 +36,8 @@
             rotation="90 0 0"
             static-body>
             </a-entity>
+
+            <a-video src="#video_apagon-mp4" width="4" height="2" position="-120 75 -315" autoplay loop muted></a-video>
             
             <!-- Cámara con controles móviles -->
             <a-entity id="rig" position="50 50 0">
